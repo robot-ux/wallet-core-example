@@ -9,6 +9,8 @@ function App() {
 
     console.log(wallet.mnemonic());
     setMnemonic(wallet.mnemonic());
+
+    wallet.delete();
   }
 
   return (

@@ -4,7 +4,7 @@ specifiers:
   '@testing-library/jest-dom': ^5.16.4
   '@testing-library/react': ^13.2.0
   '@testing-library/user-event': ^13.5.0
-  '@trustwallet/wallet-core': ^2.7.0
+  '@trustwallet/wallet-core': ^2.9.0
   '@types/jest': ^27.5.0
   '@types/node': ^16.11.34
   '@types/react': ^18.0.9
@@ -23,7 +23,7 @@ dependencies:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.2.0_react-dom@18.1.0+react@18.1.0
   '@testing-library/user-event': 13.5.0
-  '@trustwallet/wallet-core': 2.7.0
+  '@trustwallet/wallet-core': 2.9.5
   '@types/jest': 27.5.0
   '@types/node': 16.11.34
   '@types/react': 18.0.9
@@ -1897,7 +1897,7 @@ packages:
     dev: false
 
   /@protobufjs/aspromise/1.1.2:
-    resolution: {integrity: sha1-m4sMxmPWaafY9vXQiToU00jzD78=}
+    resolution: {integrity: sha512-j+gKExEuLmKwvz3OgROXtrJ2UG2x8Ch2YZUxahh+s1F2HZ+wAceUNLkvy6zKCPVRkU++ZWQrdxsUeQXmcg4uoQ==}
     dev: false
 
   /@protobufjs/base64/1.1.2:
@@ -1909,34 +1909,34 @@ packages:
     dev: false
 
   /@protobufjs/eventemitter/1.1.0:
-    resolution: {integrity: sha1-NVy8mLr61ZePntCV85diHx0Ga3A=}
+    resolution: {integrity: sha512-j9ednRT81vYJ9OfVuXG6ERSTdEL1xVsNgqpkxMsbIabzSo3goCjDIveeGv5d03om39ML71RdmrGNjG5SReBP/Q==}
     dev: false
 
   /@protobufjs/fetch/1.1.0:
-    resolution: {integrity: sha1-upn7WYYUr2VwDBYZ/wbUVLDYTEU=}
+    resolution: {integrity: sha512-lljVXpqXebpsijW71PZaCYeIcE5on1w5DlQy5WH6GLbFryLUrBD4932W/E2BSpfRJWseIL4v/KPgBFxDOIdKpQ==}
     dependencies:
       '@protobufjs/aspromise': 1.1.2
       '@protobufjs/inquire': 1.1.0
     dev: false
 
   /@protobufjs/float/1.0.2:
-    resolution: {integrity: sha1-Xp4avctz/Ap8uLKR33jIy9l7h9E=}
+    resolution: {integrity: sha512-Ddb+kVXlXst9d+R9PfTIxh1EdNkgoRe5tOX6t01f1lYWOvJnSPDBlG241QLzcyPdoNTsblLUdujGSE4RzrTZGQ==}
     dev: false
 
   /@protobufjs/inquire/1.1.0:
-    resolution: {integrity: sha1-/yAOPnzyQp4tyvwRQIKOjMY48Ik=}
+    resolution: {integrity: sha512-kdSefcPdruJiFMVSbn801t4vFK7KB/5gd2fYvrxhuJYg8ILrmn9SKSX2tZdV6V+ksulWqS7aXjBcRXl3wHoD9Q==}
     dev: false
 
   /@protobufjs/path/1.1.2:
-    resolution: {integrity: sha1-bMKyDFya1q0NzP0hynZz2Nf79o0=}
+    resolution: {integrity: sha512-6JOcJ5Tm08dOHAbdR3GrvP+yUUfkjG5ePsHYczMFLq3ZmMkAD98cDgcT2iA1lJ9NVwFd4tH/iSSoe44YWkltEA==}
     dev: false
 
   /@protobufjs/pool/1.1.0:
-    resolution: {integrity: sha1-Cf0V8tbTq/qbZbw2ZQbWrXhG/1Q=}
+    resolution: {integrity: sha512-0kELaGSIDBKvcgS4zkjz1PeddatrjYcmMWOlAuAPwAeccUrPHdUqo/J6LiymHHEiJT5NrF1UVwxY14f+fy4WQw==}
     dev: false
 
   /@protobufjs/utf8/1.1.0:
-    resolution: {integrity: sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=}
+    resolution: {integrity: sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw==}
     dev: false
 
   /@rollup/plugin-babel/5.3.1_18dfcb1ca7050ba6f445f613f30091b1:
@@ -2188,10 +2188,10 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /@trustwallet/wallet-core/2.7.0:
-    resolution: {integrity: sha512-Uj5TorRG6bFq8OebW2gAKfH6n3mfr7JWtvhNHWpHtL2B7CfQMsEhc3lui4eaLVb1gcrbov4D+w/P6CUs9Wr76w==}
+  /@trustwallet/wallet-core/2.9.5:
+    resolution: {integrity: sha512-pb0huJUP34DqyxWslTrTW1SX0CZzpSINVonykwVvCk2Lc1pCJvbUPvrH+tMAkBGb5ytMuceuQ/KcvJ6KzmudBw==}
     dependencies:
-      protobufjs: 6.11.2
+      protobufjs: 6.11.3
     dev: false
 
   /@trysound/sax/0.2.0:
@@ -8198,8 +8198,8 @@ packages:
       react-is: 16.13.1
     dev: false
 
-  /protobufjs/6.11.2:
-    resolution: {integrity: sha512-4BQJoPooKJl2G9j3XftkIXjoC9C0Av2NOrWmbLWT1vH32GcSUHjM0Arra6UfTsVyfMAuFzaLucXn1sadxJydAw==}
+  /protobufjs/6.11.3:
+    resolution: {integrity: sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg==}
     hasBin: true
     requiresBuild: true
     dependencies:

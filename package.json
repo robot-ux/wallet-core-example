@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
-    "@trustwallet/wallet-core": "^2.7.0",
+    "@trustwallet/wallet-core": "^2.9.0",
     "@types/jest": "^27.5.0",
     "@types/node": "^16.11.34",
     "@types/react": "^18.0.9",
@@ -23,7 +23,8 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build"
+    "build": "react-app-rewired build",
+    "postinstall": "cp node_modules/@trustwallet/wallet-core/dist/lib/wallet-core.* public/static/js"
   },
   "eslintConfig": {
     "extends": [

@@ -13,6 +13,7 @@ export const initWasm = () => {
     };
   
     (window as any).Module = init;
-    require('@trustwallet/wallet-core');
+    const { TW } = require('@trustwallet/wallet-core');
+    console.log(TW.Ethereum.Proto);
   })
 }

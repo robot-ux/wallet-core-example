@@ -10,6 +10,7 @@
 
 # production
 /build
+public/static/js/wallet-core.*
 
 # misc
 .DS_Store

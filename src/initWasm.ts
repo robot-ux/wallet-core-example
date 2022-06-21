@@ -10,8 +10,8 @@ export const initWasm = () => {
       }
     };
   
+    // Only for init.
     (window as any).Module = init;
-    const { TW } = require('@trustwallet/wallet-core');
-    (window as any).TW = TW;
+    window.TW = require('@trustwallet/wallet-core').TW;
   })
 }

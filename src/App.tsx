@@ -6,17 +6,17 @@ function App() {
   const [rawTx, setRawTx] = useState('')
 
   const handleCreateWallet = () => {
-    const { HDWallet } = (window as any).Module;
-    const wallet = new HDWallet.create(128, "");
+    const { HDWallet } = window.Module;
+    const wallet = HDWallet.create(128, "");
     
     setMnemonic(wallet.mnemonic());
-
     wallet.delete();
   }
 
   const testSignEthereumTx = () => {
-    const TW = (window as any).TW;
-    const { HexCoding, AnySigner, CoinType } = (window as any).Module;
+    const {TW, Module} = window;
+    const { HexCoding, AnySigner, CoinType } =  Module;
+
 
     const input = TW.Ethereum.Proto.SigningInput.create({
       toAddress: "0x6b175474e89094c44da98b954eedeac495271d0f",

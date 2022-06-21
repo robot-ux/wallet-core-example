@@ -5,15 +5,13 @@ export const initWasm = () => {
       preRun: [],
       postRun: [],
       onRuntimeInitialized: () => {
-        console.info('wallet-core is ready....');
+        console.info('wallet-core wasm loaded');
         resolve();
-      },
-      totalDependencies: 0,
-      monitorRunDependencies: (t: string) => console.log('monitorRunDependencies: ', t)
+      }
     };
   
     (window as any).Module = init;
     const { TW } = require('@trustwallet/wallet-core');
-    console.log(TW.Ethereum.Proto);
+    (window as any).TW = TW;
   })
 }

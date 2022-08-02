@@ -1,22 +1,21 @@
-import { useState } from 'react';
-import { Buffer } from 'buffer';
+import { useState } from "react";
+import { Buffer } from "buffer";
 
 function App() {
-  const [mnemonic, setMnemonic] = useState('')
-  const [rawTx, setRawTx] = useState('')
+  const [mnemonic, setMnemonic] = useState("");
+  const [rawTx, setRawTx] = useState("");
 
   const handleCreateWallet = () => {
-    const { HDWallet } = window.Module;
+    const { HDWallet } = window.WalletCore;
     const wallet = HDWallet.create(128, "");
-    
+
     setMnemonic(wallet.mnemonic());
     wallet.delete();
-  }
+  };
 
   const testSignEthereumTx = () => {
-    const {TW, Module} = window;
-    const { HexCoding, AnySigner, CoinType } =  Module;
-
+    const { TW, WalletCore } = window;
+    const { HexCoding, AnySigner, CoinType } = WalletCore;
 
     const input = TW.Ethereum.Proto.SigningInput.create({
       toAddress: "0x6b175474e89094c44da98b954eedeac495271d0f",
@@ -42,7 +41,7 @@ function App() {
     const output = TW.Ethereum.Proto.SigningOutput.decode(outputData);
 
     setRawTx(HexCoding.encode(output.encoded));
-  }
+  };
 
   return (
     <div>

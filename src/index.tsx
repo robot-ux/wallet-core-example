@@ -1,26 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { initWasm } from './initWasm';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { initWasm, TW } from "@trustwallet/wallet-core";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 
-root.render(<div>loading...</div>)
+root.render(<div>loading...</div>);
 
-initWasm().then(() => {
+initWasm().then((WalletCore) => {
+  window.WalletCore = WalletCore;
+  window.TW = TW;
   // rerender
   root.render(
     <React.StrictMode>
       <App />
     </React.StrictMode>
   );
-})
-
-
+});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

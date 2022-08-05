@@ -4,7 +4,7 @@ specifiers:
   '@testing-library/jest-dom': ^5.16.4
   '@testing-library/react': ^13.2.0
   '@testing-library/user-event': ^13.5.0
-  '@trustwallet/wallet-core': 2.9.8
+  '@trustwallet/wallet-core': 3.0.1
   '@types/jest': ^27.5.0
   '@types/node': ^16.11.34
   '@types/react': ^18.0.9
@@ -36,7 +36,7 @@ devDependencies:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.3.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 13.5.0_gwcpuyfvwbszhlmedmugzivgzu
-  '@trustwallet/wallet-core': 2.9.8
+  '@trustwallet/wallet-core': 3.0.1
   '@types/jest': 27.5.2
   '@types/node': 16.11.41
   '@types/react': 18.0.14
@@ -2520,8 +2520,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /@trustwallet/wallet-core/2.9.8:
-    resolution: {integrity: sha512-bAshlnBzXMffuNwWdA+5LIq/3ygHewfdtDdLEYqx+yvZ9ZeXEvHAGNpeOrkuLXtkPT9lJf+srktvj87S2bFpcA==}
+  /@trustwallet/wallet-core/3.0.1:
+    resolution: {integrity: sha512-WrZwWO85ja4SKyCftJQqj/XWqcLmrP6qJ42YuU9FSzdJp68IdOICckGj5INaW0DE+3O85bPNO+zTmBTBKRZr7g==}
     dependencies:
       protobufjs: 6.11.3
     dev: true
